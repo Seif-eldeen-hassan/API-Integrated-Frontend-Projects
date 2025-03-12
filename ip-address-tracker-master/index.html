@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | IP Address Tracker</title>
+  <link rel="stylesheet" href="/main.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&family=Clicker+Script&family=DM+Serif+Text:ital@0;1&family=DynaPuff:wght@400..700&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Kumbh+Sans:wght@100..900&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Lexend:wght@100..900&family=Manrope:wght@200..800&family=Mystery+Quest&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Iso&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Zen+Dots&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="upper_page">
+    <h1 class="title"> IP Address Tracker </h1>
+    <div class="input_ip">
+        <input type="text" class="get_ip" placeholder="Search for any IP address or domain">
+        <button class="ip_bt"> <img src="/images/icon-arrow.svg"  class="arrow"></button>
+    </div>
+  </div>
+  <div class="info_card"> 
+      <div class="info">
+          <div class="info_text">
+              <h1 class="info-title"> IP ADDRESS </h1>
+              <h1 class="data">  Ip address will<br>appear here </h1>
+          </div>
+          <hr class="line">
+      </div>
+      <div class="info">
+          <div class="info_text">
+            <h1 class="info-title"> LOCATION </h1>
+            <h1 class="data">  Location will<br> appear here </h1>
+          </div>
+          <hr class="line">
+      </div>
+      <div class="info">
+          <div class="info_text">
+            <h1 class="info-title"> TIME ZONE </h1>
+            <h1 class="data">  Time zone will<br> appear here  </h1>
+          </div>
+          <hr class="line">
+      </div>
+      <div class="info">
+          <div class="info_text">
+            <h1 class="info-title"> ISP </h1>
+            <h1 class="data"> Isp will<br> appear here </h1>
+          </div>
+      </div>
+
+  </div>
+  <div id="map">
+
+  </div>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""></script>
+  <script src="/main.js"></script>
+ 
+</body>
+</html>
